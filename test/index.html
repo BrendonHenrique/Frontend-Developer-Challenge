@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>POSSIBLE Pelotas</title>
+	<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+	<!-- START USEFUL MARKUP -->
+	<div class="quarter" data-direction="horizontal">
+		<div class="blocks top left">
+			<div class="traffic-light closed"></div>
+		</div>
+
+		<div class="blocks top right"></div>
+
+		<div class="blocks bottom left">
+			<div class="traffic-light opened"></div>
+		</div>
+
+		<div class="blocks bottom right"></div>
+
+		<div class="cars cars__horizontal">
+			<span>car 1</span>
+		</div>
+		<div class="cars cars__vertical">
+			<span>car 2</span>
+		</div>
+	</div>
+	<!-- END USEFUL MARKUP -->
+
+	<article id="rules">
+		<h1>Rules</h1>
+
+		<h2>Mandatory rules</h2>
+		
+		<p>- You're not allowed to create any extra tag in HTML or javascript. Use only the ones available inside the USEFUL MARKUP comments.</p>
+		<p>- Keep your css and javascript code organized for a good readability</p>
+		<p>- You'll create a crossing. There are 2 one-way streets. The traffic moves from left to right in horizontal road and from top to bottom in vertical road. There are 4 blocks, and the viewport is limited by those 4 blocks. The cars shouldn't appear outside this viewport.</p>
+		<p>- You should reproduce the CSS as most as similar to the image called <a href="reference.png">reference.png</a> attached in this folder. Do not use background images in this exercise.</p>
+		<p>- <strong>Traffic lights rules:</strong> The lights should toggle every 15 seconds (both must be red during 3 seconds before toggle the lights). A car should never pass trough a red light in his road.</p>
+
+		<h2>Recommendations</h2>
+
+		<p>- Every car should move between 50px and 92px per second.</p>
+		<p>- The cars should move smooth.</p>
+		<p>- Try use javascript without any framework.</p>
+	</article>
+
+	<script src="functions.js"></script>
+</body>
+</html>
