@@ -78,6 +78,8 @@
 
 /* traffic light 1 ( upper left traffic light at vertical road )*/
 .top>.traffic-light{
+    z-index:2;
+    --background : white;
     position: absolute;
     top: 11.5rem;
     right: -15px;
@@ -86,13 +88,16 @@
 }
 
 /* traffic light 2 ( upper right traffic light at vertical road  ) */
-.top>.traffic-light:after{
-    background-color:white;
+.top>.traffic-light::after{
+    z-index:2;
+    background-color: var(--background);
     border:2px solid green;
 }
 
 /* traffic light 3 ( upper left traffic light at horizontal road  ) */
 .bottom>.traffic-light{
+    z-index:2;
+    --background : white;
     position: absolute;
     top: -30px;
     right: 0;
@@ -101,11 +106,12 @@
 }
 
 /* traffic light 4 ( lower left traffic light at horizontal road )  */
-.bottom>.traffic-light:after{
+.bottom>.traffic-light::after{
+    z-index:2;
+    background-color: var(--background);
     top: 12px;
     left: -2px;
     border:2px solid red;
-    background-color:white;
 }
 
 /* closed traffic light */
