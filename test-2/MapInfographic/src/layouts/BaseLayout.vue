@@ -1,5 +1,5 @@
 <template funtional>
-  <q-layout view="lHh Lpr lFf">
+  <q-layout style="overflow:hidden" view="lHh Lpr lFf">
     <q-page-container>
       <router-view />
     </q-page-container>
