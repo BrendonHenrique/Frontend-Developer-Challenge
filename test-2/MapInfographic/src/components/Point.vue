@@ -18,7 +18,7 @@ export default {
   .point 
     position: absolute
     background-color: transparent
-    border: 5px solid #00636d
+    border: 5px solid $primary
     height: 20px;
     width:  20px;
     border-radius: 50%;
@@ -30,7 +30,7 @@ export default {
     animation-iteration-count: infinite
 
   .point:hover
-    background-color: #00636d 
+    background-color: $primary 
     cursor: pointer
 
   .point::after
@@ -43,7 +43,7 @@ export default {
     height: 30px 
     right: 10px 
     border-radius: 100% 
-    border: 1.5px solid #00636d
+    border: 1.5px solid $primary
     
   @keyframes pulse
     0%

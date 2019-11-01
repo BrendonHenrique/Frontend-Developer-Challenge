@@ -18,7 +18,7 @@ export default {
 }
 </script>
 
-<style lang="sass">
+<style lang="sass" >
 
   .map 
     width: 100% 

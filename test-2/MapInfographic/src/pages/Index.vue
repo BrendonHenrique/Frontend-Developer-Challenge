@@ -1,5 +1,6 @@
 <template>
   <div>
+    
     <Map> 
       <Point 
         :className="country.name" 
@@ -7,30 +8,24 @@
         @handleClick="openInfographic"
       />
     </Map> 
-    
-    <q-dialog v-model="kuwait">
-      <q-card>
-        <q-card-section>
-          <div class="text-h6">kuwait</div>
-        </q-card-section>
-      </q-card>
-    </q-dialog>
 
-    <q-dialog v-model="bahrain">
-      <q-card>
-        <q-card-section>
-          <div class="text-h6">bahrain</div>
-        </q-card-section>
-      </q-card>
-    </q-dialog>
+    <kuwait-country
+    :vModel="kuwait" 
+    @closeKuwaitCountry="kuwait = false" 
+    :jsonContent="require('../../JSON/content.json')[0]" 
+    />
+
+    <bahrain-country 
+    :vModel="bahrain" 
+    @closeUaeCountry="bahrain = false" 
+    :jsonContent="require('../../JSON/content.json')[0]" 
+    />
     
-    <q-dialog v-model="uae">
-      <q-card>
-        <q-card-section>
-          <div class="text-h6">uae</div>
-        </q-card-section>
-      </q-card>
-    </q-dialog>
+    <uae-country 
+    :vModel="uae" 
+    @closeUaeCountry="uae = false" 
+    :jsonContent="require('../../JSON/content.json')[0]" 
+    />
 
   </div>
 </template>
@@ -57,14 +52,18 @@ export default {
     }
   },
   methods:{
+    // Método utilizado para abrir o infografico, recebe o nome do 
+    // páis e acessa o v-model pela referência do this ( data ) 
     openInfographic(countryClicked){
       this[countryClicked] = true;
-    }
+    },
   },
   components:{
     'Map': require('../components/Map').default,
     'Point': require('../components/Point').default,
+    'uae-country': require('../components/UaeCountry').default,
+    'bahrain-country': require('../components/BahrainCountry').default,
+    'kuwait-country': require('../components/KuwaitCountry').default,
   }
 }
 </script>
-
