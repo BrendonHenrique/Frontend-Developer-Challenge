@@ -10,3 +10,11 @@
 - Test 1 - Semáforo 
 ![alt text](https://raw.githubusercontent.com/BrendonHenrique/Frontend-Developer-Challenge/development/reference.png)
 
+- Test 2 - Desktop view  
+![alt text](https://raw.githubusercontent.com/BrendonHenrique/Frontend-Developer-Challenge/development/Desktop1.png)
+![alt text](https://raw.githubusercontent.com/BrendonHenrique/Frontend-Developer-Challenge/development/Desktop2.png)
+
+- Test 2 - Mobile view  
+![alt text](https://raw.githubusercontent.com/BrendonHenrique/Frontend-Developer-Challenge/development/Mobile1.png)
+![alt text](https://raw.githubusercontent.com/BrendonHenrique/Frontend-Developer-Challenge/development/Mobile2.png)
+
