@@ -10,10 +10,3 @@
 - Test 1 - Semáforo 
 ![alt text](https://raw.githubusercontent.com/BrendonHenrique/Frontend-Developer-Challenge/development/reference.png)
 
-
-- Test 2 - Infográfico Mobile 
-![alt text](https://raw.githubusercontent.com/BrendonHenrique/Frontend-Developer-Challenge/development/mobile-example.webm)
-
-- Test 2 - Infográfico Desktop 
-![alt text](https://raw.githubusercontent.com/BrendonHenrique/Frontend-Developer-Challenge/development/desktop-example.webm)
-
