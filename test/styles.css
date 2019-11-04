@@ -1,0 +1,153 @@
+/* Road style */
+.quarter{
+    display: grid;
+	grid-template-columns: 1fr 1fr;
+    max-width: 500px;
+    overflow: hidden;
+    max-height: 29.4rem;
+    margin: 50px auto;
+}
+
+.blocks{
+    background-color: #CCCCCC;
+    height: 200px;
+}
+
+.top{
+    border-bottom: 35px solid #333333;
+}
+
+.bottom{
+    position: relative;
+    border-top:  35px solid #333333;
+}
+
+.left{
+    position: relative;
+    border-right:  35px solid #333333;
+}
+
+.right{
+    border-left: 35px solid #333333;
+}
+/*  */
+
+/* Road lines */
+.bottom::before {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: -2.3rem;
+    left: 0;
+    right: 0;
+    bottom: 15rem;
+    border-bottom: 0.3rem dashed #ffea00;
+}
+
+.left::after {
+    content: " ";
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    right: -38px;
+    bottom: 0;
+    border-right: .3rem dashed #ffea00;
+}
+/*  */
+
+/* Traffic light style */
+.traffic-light{	
+    width: 9px;
+    height: 9px;
+    position: relative;
+    border-radius: 100%;
+    background-color: white;
+}
+
+.traffic-light::after{
+    content: " ";
+    position: absolute;
+    top: -2px;
+    left: 11px;
+    border-radius: 100%;
+    width: 10px;
+    height: 10px;
+    background-color: white;
+}
+/*  */
+
+/* top right red traffic light at vertical road */
+.top>.traffic-light{
+    --background : white;
+    position: absolute;
+    top: 11.6rem;
+    right: -30px;
+    background-color: white;
+    border: 2px solid red;
+}
+
+/* top left green traffic light at vertical road */
+.top>.traffic-light::after{
+    content: " ";
+    top: -3px;
+    left: -17px;
+    background-color: var(--background);
+    border: 2px solid green;
+}
+
+/* bottom left green traffic light at horizontal road */
+.bottom>.traffic-light{
+    --background: white;
+    position: absolute;
+    top: -16px;
+    right: 0;
+    border: 2px solid green;
+    background-color:white;
+}
+
+/* bottom left red traffic light at horizontal road  */
+.bottom>.traffic-light::after{
+    content: " ";    
+    background-color: var(--background);
+    top: -16px;
+    left: -2px;
+    border: 2px solid red;
+}
+
+/* closed traffic light */
+.closed{
+    background-color: red !important;
+}
+
+/* opened traffic light */
+.opened{
+    background-color: green !important;
+}
+
+
+/* Car style */
+.cars{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    width: 40px; 
+    font-size: 11px;
+}
+
+.cars__vertical{
+    position: relative;
+    bottom: 20rem;
+    left: -.1rem;
+    background-color: blue;
+    transform: rotate(-90deg);
+}
+
+.cars__horizontal{
+    position: relative;
+    bottom: 16.5rem;
+    left: 310px;
+    background-color: red;
+} 
+/*  */
+

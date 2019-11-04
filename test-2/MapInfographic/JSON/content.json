@@ -1,0 +1,32 @@
+[
+  {
+    "title": "Lorem ipsum",
+    "subtitle": "Lorem ipsum dolor sit amet",
+    "infobox" : {
+        "title": "Lorem ipsum",
+        "items": [{
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sem quis lorem feugiat lacinia. Vestibulum vulputate luctus risus. Proin id congue eros."
+        }]
+    },
+    "factbox": {
+        "title": "Lorem ipsum",
+        "topics": [{
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sem quis lorem feugiat lacinia. Vestibulum vulputate luctus risus. Proin id congue eros."
+        }],
+        "img": ""
+    },
+    "benefitsbox" : {
+        "title": "Lorem ipsum",
+        "items": [{
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sem quis lorem feugiat lacinia. Vestibulum vulputate luctus risus. Proin id congue eros.",
+            "img": ""
+        },{
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sem quis lorem feugiat lacinia. Vestibulum vulputate luctus risus. Proin id congue eros.",
+            "img": ""
+        },{
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sed sem quis lorem feugiat lacinia. Vestibulum vulputate luctus risus. Proin id congue eros.",
+            "img": ""
+        }]
+    }
+  }
+]
